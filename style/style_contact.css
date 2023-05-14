@@ -1,0 +1,139 @@
+h1 {
+    color: #000000;
+}
+
+p {
+    color: #000000;
+}
+
+a {
+    color: #000000;
+}
+
+.contenitore-principale {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 9px;
+    margin-top: 130px;
+    margin-bottom: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.colonna1-mappa{
+    margin: 0px;
+    padding: 0px;
+    grid-area: 2 / 4 / 4 / 10;
+    z-index: 2;
+    height: auto;
+    width: auto;
+}
+
+.colonna3-rettangolo {
+    grid-area: 2 / 4 / 4 / 10;
+}
+
+.colonna2-testo {
+    margin: 0px;
+    padding: 0px;
+    grid-area: 2 / 12 / 4 / 18;
+    margin-left: 50px;
+}
+
+.colonna2-testo h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 110%;
+    text-align: left;
+    color: #000000;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+
+.colonna2-testo p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: auto;
+    text-align: left;
+    color: #000000;
+    margin: 0px;
+
+}
+
+.evidence {
+    font-weight: bold;
+}
+
+.colonna3-rettangolo img {
+    position: absolute;
+    width:  630px;
+    height: 630px;
+    left: 290px;
+    top: 210px;
+    border: 1px solid #000000;
+    transform: rotate(7.01deg);
+    z-index: 1;
+}
+
+/* ———————— RESPONSIVE ——————— */
+@media (min-width: 768px) {
+    .contenitore-principale2{
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .contenitore-principale {
+        display: none;
+    }
+    .colonna2-testo2 h1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 46px;
+        line-height: 110%;
+        text-align: center;
+        color: #000000;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .colonna2-testo2 p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: auto;
+        text-align: center;
+        color: #000000;
+    }
+    .colonna2-testo2{
+        margin: 0px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .colonna1-mappa2{
+        margin-top: 60px;
+        width: auto;
+    }
+    .colonna1-mappa2 img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .contenitore-principale2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+}
+  

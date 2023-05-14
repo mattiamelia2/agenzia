@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style_temmate.css">
+    <link rel="stylesheet" href="/style/style_header.css">
+    <link rel="stylesheet" href="/style/style_footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Helvetica+Neue:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="/img/general/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').click(function () {
+                $('.vocimenu').toggleClass('open');
+                $('.close-icon').toggle();
+            });
+
+            $('.close-icon').click(function () {
+                $('.vocimenu').removeClass('open');
+                $('.close-icon').hide();
+            });
+        });
+    </script>
+    <title>La Boca — Arte in linea</title>
+</head>
+<header>
+    <section class="header">
+        <nav class="menu-navigazione">
+            <div class="contenitore1">
+                <div class="logo-header">
+                    <a href="/index.html"><img src="/img/general/marchio.png" alt="Arte In Linea"></a>
+                </div>
+            </div>
+            <div class="contenitore2">
+                <div class="hamburger">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="vocimenu">
+                    <li><a href="/index.html">The agency</a></li>
+                    <li><a href="/page/whowheare.html">Who we are</a></li>
+                    <li class="active"><a href="/page/ourteam.html">Our team</a></li>
+                    <li><a href="/page/contacts.html">Contact us</a></li>
+                </ul>
+                <div class="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+<body>
+    <div class="cont-principale-artista">
+        <div class="back-arrow">
+            <a href="javascript:history.back()"><i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="testo-1-dx">
+            <h1>La Boca</h1>
+            <p>La Boca have the rare, impressive ability to create designs and artwork resembling some of the best album sleeves lurking in your dad’s record collection. The studio, founded in 2002, is based in west London and has gathered an envious collection of awards, including Cannes Lions, European Design Awards, and the AOI Illustration Awards. Their exquisitely executed, psychedelic style is the combined result of each of the studio's members' unique influences, having hailed from London, Bordeaux, Devon and Switzerland. “We work as a studio, so most of our designs are created as a team,” says Scott Bendall of La Boca. “It's not unusual to have two or three people working on a single piece.” Keen to work on more animated projects in the future, the team (based in two studios, one in London and one in Amsterdam) are never short on work from a selection of devoted clients. In their own words, La Boca’s creations are: “Retina teasing, tactile and occasionally slightly wonky.”</p>
+        </div>
+        <div class="immagine-1-sx">
+            <img src="/img/team/la-boca/team_laboca_1.png">
+        </div>
+        <div class="immagine-2-sx">
+            <img src="/img/team/la-boca/team_laboca_3.png">
+        </div>
+        <div class="immagine-3-sx">
+            <img src="/img/team/la-boca/team_laboca_2.png">
+        </div>
+        <div class="immagine-4-sx">
+            <img src="/img/team/la-boca/team_laboca_4.png">
+        </div>
+    </div>
+</body>
+<footer>
+    <main class="parent">
+        <div class="lineadivisore"><hr></div>
+            <div class="div2">
+                <a href="/index.html"><img src="/img/general/marchio.png" alt="Arte In Linea"></a>
+            </div>
+            <div class="div3">
+                <p>P.IVA 0391 39130390 — <a href="mailto:info@mattiamelia.com">info@arteinlinea.com</a></p>
+            </div>
+            <div class="div4">
+                <p><a href="#">Privacy & Cookie Policy</a> — designed by <a href="https://mattiamelia.com">Mattia Melia ©</a></p> 
+                <a href="#"><img src="/img/general/icon-f.png" alt="Facebook"></a>
+                <a href="#"><img src="/img/general/icon-ig.png" alt="Instagram"></a>
+            </div>
+    </main>
+    <main class="mobileparent">
+        <div class="lineadivisore"><hr></div>
+            <div class="div2">
+                <a href="index.html"><img src="/img/general/marchio.png" alt="Arte In Linea"></a>
+            </div>
+            
+            <div class="div3">
+                <p>P.IVA 0391 39130390<br><a href="mailto:info@mattiamelia.com">info@arteinlinea.com</a></p>
+            </div>
+            <div class="div4">
+                <p><a href="#">Privacy & Cookie Policy</a><br>designed by <a href="https://mattiamelia.com">Mattia Melia ©</a></p> </div>
+            <div class="lineadivisore"><hr></div>
+            <div class="div5">
+                <a href="#"><img src="/img/general/icon-f.png" alt="Facebook"></a>
+                <a href="#"><img src="/img/general/icon-ig.png" alt="Instagram"></a>
+            </div>
+    </main>
+</footer>
+
+</html>

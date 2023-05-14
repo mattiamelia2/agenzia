@@ -1,0 +1,147 @@
+    .parent2 {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-column-gap: 30px;
+    height: 78vh;
+    }
+    
+    .contenitore1 {
+        grid-area: 2 / 11 / 5 / 17;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contenitore2 {
+        grid-area: 2 / 4 / 5 / 10;
+    }
+
+    .contenitore3 {
+        grid-area: 2 / 4 / 5 / 10;
+    }
+
+    .contenitore4 {
+        grid-area: 2 / 11 / 5 / 17;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .contenitore5 {
+        grid-area: 2 / 4 / 5 / 10;
+    }
+
+    .contenitore6 {
+        grid-area: 2 / 4 / 5 / 10;
+    }
+
+    .contenitore1 h1 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 110%;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 0px;
+    }
+
+    .contenitore1 p{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .contenitore2 img{
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 380px;
+        top: 211.25px;
+        z-index: 2;
+    }
+
+    .contenitore3 img {
+        position: absolute;
+        width: 500px;
+        height: 620px;
+        left: 343px;
+        top: 170px;
+        z-index: 1;
+    }
+    
+/* ———————— RESPONSIVE MOBILE ——————————*/
+@media (min-width: 768px) {
+    .parent3 {
+        display: none;
+    }
+    .contenitore2-1 {
+        display: none;
+    }
+}
+@media (max-width: 767px) {
+    .parent2 {
+        display: none;
+    }
+    .parent3{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .contenitore1-2 {
+        grid-area: auto;
+        padding: 0px;
+    }
+    
+    .contenitore2,
+    .contenitore3,
+    .contenitore4,
+    .contenitore5,
+    .contenitore6 {
+        grid-area: auto;
+        position: relative;
+    }
+    
+    .contenitore3 {
+        display: none;
+    }
+    
+    .contenitore2 img,
+    .contenitore3 img {
+        display: none;
+    }
+    .contenitore2-1{
+        width: auto;
+        margin-left: 30px;
+        margin-right: 30px;
+        margin-top: 50px;
+    }
+    .contenitore2-1 img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: auto;
+    }
+
+    .contenitore1-2 h1 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 110%;
+        text-align: left;
+        color: #000000;
+        margin-bottom: 0px;
+    }
+    
+    .contenitore1-2 p {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #000000;
+    }
+}
+

@@ -1,0 +1,175 @@
+/* ——————————— STYLE HEADER —————————————— */
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+    padding: 20px 30px 20px 50px;
+    background-color: transparent;
+    margin-right: 40px;
+    margin-left: 40px;
+    z-index: 10;
+}
+
+header img {
+    width: 30%;
+}
+
+.menu-navigazione {
+    display: flex;
+    align-items: center;
+}
+
+.menu-navigazione ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-navigazione ul li {
+    margin: 0px 20px;
+}
+/* ——————————— header style // voci menu —————————————— */
+.vocimenu {
+    font-size: 18px;
+    font-family: 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+.vocimenu li {
+    position: relative;
+  }
+  
+  .vocimenu li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    width: 0;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+  }
+  
+  .vocimenu li.active::after,
+  .vocimenu li:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    width: 100%;
+  }
+  
+
+.vocimenu li a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+    z-index: 1;
+}
+
+
+.menu-navigazione {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* ——————————— responsive header —————————————— */
+.hamburger {
+    display: none;
+}
+
+.hamburger-icon {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #000;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+      
+      header {
+        padding: 20px;
+        background-color: transparent;
+        margin: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+      
+      header img {
+        width: 40%;
+    }
+      
+      .menu-navigazione ul {
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.7s ease-in;
+        z-index: 3;
+    }
+      
+      .hamburger {
+        display: block;
+    }
+      
+      .menu-navigazione ul.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 1;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        transition-duration: 0.5s;
+        opacity: 1;
+        visibility: visible;
+    }
+      
+      .menu-navigazione ul li {
+        margin-bottom: 20px;
+    }
+      
+      .menu-open .close-icon {
+        display: block;
+    }
+      
+      .vocimenu {
+        font-size: 17px;
+        align-items: center;
+    }
+      
+      .vocimenu li a {
+        font-size: 18px;
+        color: #000;
+        margin: 10px 0;
+    }
+}    
+/* ————————————— FINE STYLE HEADER ———————————*/

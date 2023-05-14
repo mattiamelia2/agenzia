@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style_home.css">
+    <link rel="stylesheet" href="/style/style_header.css">
+    <link rel="stylesheet" href="/style/style_footer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Helvetica+Neue:wght@100;200;300;400;500;600;700;800;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="/img/general/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.hamburger').click(function () {
+                $('.vocimenu').toggleClass('open');
+                $('.close-icon').toggle();
+            });
+
+            $('.close-icon').click(function () {
+                $('.vocimenu').removeClass('open');
+                $('.close-icon').hide();
+            });
+        });
+    </script>
+    <script>
+        if (window.innerWidth <= 767) {
+            // Blocca lo scroll sul touchstart
+            document.addEventListener('touchstart', function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            }, { passive: false });
+    
+            // Blocca lo scroll sul touchmove
+            document.addEventListener('touchmove', function (event) {
+                event.preventDefault();
+            }, { passive: false });
+        }
+    </script>
+    
+    <title>Arte in linea — Experience the power of visual storytelling</title>
+</head>
+<header>
+    <section class="header">
+        <nav class="menu-navigazione">
+            <div class="contenitore1">
+                <div class="logo-header">
+                    <a href="/index.html"><img src="/img/general/marchio.png" alt="Arte In Linea"></a>
+                </div>
+            </div>
+            <div class="contenitore2">
+                <div class="hamburger">
+                    <div class="hamburger-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <ul class="vocimenu">
+                    <li class="active"><a href="index.html">The agency</a></li>
+                    <li><a href="/page/whowheare.html">Who we are</a></li>
+                    <li><a href="/page/ourteam.html">Our team</a></li>
+                    <li><a href="/page/contacts.html">Contact us</a></li>
+                </ul>
+                <div class="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </nav>
+    </section>
+</header>
+<body>
+    <main class="home1">
+        <section class="parent">
+            <div class="titolohome">
+                <h1>Experience the powerof visual storytelling</h1>
+            </div>
+            <div class="paragrafohome">
+                <p>The experience and expertise to deliver stunning<br>that leave a lasting impression.</p>
+            </div>
+            </div>
+        </section>
+    </main>
+    <main class="home1-2">
+        <section class="parent-2">
+            <div class="titolohome">
+                <h1>Experience the powerof visual storytelling</h1>
+            </div>
+            <div class="paragrafohome">
+                <p>The experience and expertise to deliver stunning that leave a lasting impression.</p>
+            </div>
+            <div class="button1">
+                <button class="bottone">
+                    <a href="/page/whowheare.html">Scopri di più</a>
+                </button>
+            </div>
+            <div class="imghome8"><img src="/img/home/home_1.png"></div>
+            <div class="imghome9"><img src="/img/home/home_2.png"></div>
+            <div class="imghome10"><img src="/img/home/home_3.png"></div>
+            <div class="imghome11"><img src="/img/home/home_4.png"></div>
+        </section>
+    </main>
+    <div class="imghome1"><img src="/img/home/home_1.png"></div>
+    <div class="imghome2"><img src="/img/home/home_2.png"></div>
+    <div class="imghome3"><img src="/img/home/home_3.png"></div>
+    <div class="imghome4"><img src="/img/home/home_4.png"></div>
+    <div class="rettangolo1"><img src="/img/home/rettnagolo_1.png"></div>
+    <div class="rettangolo2"><img src="/img/home/rettnagolo_2.png"></div>
+    <div class="rettangolo3"><img src="/img/home/rettnagolo_3.png"></div>
+    <div class="rettangolo4"><img src="/img/home/rettnagolo_4.png"></div>
+</body>
+</html>
