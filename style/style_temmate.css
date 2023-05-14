@@ -51,7 +51,7 @@
 }
 
 .testo-1-dx h1 {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
@@ -61,7 +61,7 @@
 }
 
 .testo-1-dx p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
@@ -90,7 +90,41 @@
   .back-arrow a:hover {
     color: #555;
   }
-  
+
+.buttonsito{
+    background-color: transparent;
+    border: 1px solid #000000;
+    font-size: 19px;
+    padding: 10px 20px 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000000;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.buttonsito:hover{
+  background-color: #000000;
+  border: 1px solid #000000;
+  font-size: 19px;
+  padding: 10px 20px 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.buttonsito a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+.buttonsito a:hover {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
 
 /* ——————- RESPONSIVE ———————— */
 @media (max-width: 768px) {
@@ -145,10 +179,44 @@
       .testo-1-dx p {
         font-size: 18px;
         line-height: 24px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
       }
 
       .back-arrow {
         display: none;
       }
+      .buttonsito{
+        background-color: transparent;
+        border: 1px solid #000000;
+        font-size: 19px;
+        padding: 10px 20px 10px 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #000000;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+    
+    .buttonsito:hover{
+      background-color: #000000;
+      border: 1px solid #000000;
+      font-size: 19px;
+      padding: 10px 20px 10px 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+      margin-top: 0px;
+      margin-bottom: 40px;
+    }
+    
+    .buttonsito a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+    }
+    .buttonsito a:hover {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ffffff;
+    }
 }
