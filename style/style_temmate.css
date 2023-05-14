@@ -120,6 +120,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+  font-family: 'Inter', sans-serif;
 }
 .buttonsito a:hover {
   text-transform: uppercase;
