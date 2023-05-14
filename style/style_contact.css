@@ -43,7 +43,7 @@ a {
 }
 
 .colonna2-testo h1 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
@@ -55,7 +55,7 @@ a {
 }
 
 .colonna2-testo p {
-    font-family: 'Inter';
+   font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 23px;
@@ -92,7 +92,7 @@ a {
         display: none;
     }
     .colonna2-testo2 h1 {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
         font-size: 46px;
@@ -103,7 +103,7 @@ a {
         margin-bottom: 20px;
     }
     .colonna2-testo2 p {
-        font-family: 'Inter';
+        font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
