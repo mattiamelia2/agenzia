@@ -51,7 +51,7 @@
 }
 
 .testo-1-dx h1 {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 96px;
@@ -61,7 +61,7 @@
 }
 
 .testo-1-dx p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
